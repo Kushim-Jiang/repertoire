@@ -1,5 +1,21 @@
 # 说明
 
+## G 源
+
+这一部分企图整理全体 G 源中可以被表述为结构化文本的部分。
+
+- 第一列：序号（单位：无）。
+- 第二列：汉字（单位：无）。
+- 第三列：来源参考资料值（单位：无）或伪来源参考资料值（单位：无）。
+- 第四列：描述（单位：无）。
+
+进度：
+
+- 【已完成】G0、G1、G7、G8、GE、GK、GCE、GH、GT
+- 【待完成】G3、G5、G4K、GGH、GXC、GXH、GZH、GCH、GCY、GKX、GHZ、GHZR、GFC、GOCD、GXHZ、GHF、GZFY、GZJW、GFZ、GGFZ、GLK、GZ
+- 【无法完成】GS、GDZ、GRM、GWZ、GBK、GHC、GIDC、GLGYJ、GPGLG、GCYY、GJZ、GKJ、GZYS
+
+
 ## 汉字频度统计_1988.txt
 
 【核心参考文献】贝贵琴，张学涛．汉字频度统计——速成识读优选表．电子工业出版社，1988-04．（[全图联盟](http://book.ucdrs.superlib.net/views/specific/2929/bookDetail.jsp?dxNumber=000001081892&d=F354F677C912576BA20CE537E3431A70&fenlei=08011304)）
