@@ -1,73 +1,107 @@
-# 说明
+# Description
 
-## 藏文
+## Tibetan > 20542-22238.txt
 
-- 第一列：序号。
-- 第二列：字丁。
-- 第三列：码位。
-- 第四列：等价序列。
-- 第五列：转写。
+- Column 1: Serial number.
+- Column 2: Tibetan cluster.
+- Column 3: PUA codepoint.
+- Column 4: Canonical equivalent sequence.
+- Column 5: Latin transliteration.
 
-文件中的藏文转写基于 GB/T 20542 与 GB/T 22238，但又不完全相同。修改目的在于保证非 modifier 的字母与藏文的字符相对应。
+The transliteration scheme is based on GB/T 20542 and GB/T 22238, but not exactly the same. The purpose of the modification is to ensure that the non-modifier letters correspond to the Tibetan characters.
 
-## 契丹小字
+## KhitanSmall > khitan-words.txt
 
-- 第一列：序号。
-- 第二列：编号序列。
-- 第三列：码位序列。
+- Column 1: Serial number.
+- Column 2: Number sequence.
+- Column 3: Codepoint sequence.
 
-文件中的词汇均来自《契丹小字词汇索引》，暂未校对，也未添加 filler 以契合字符集模型。
+The vocabulary in the document is taken from 契丹小字词汇索引 and has not been proofread nor has the filler been added to fit the character set model.
 
-## G 源
+## G-Source
 
-这一部分企图整理全体 G 源中可以被表述为结构化文本的部分。
+This section attempts to collate the parts of the overall G-source that can be represented as structured text.
 
-- 第一列：序号（单位：无）。
-- 第二列：汉字（单位：无）。
-- 第三列：来源参考资料值（单位：无）或伪来源参考资料值（单位：无）。
-- 第四列：描述（单位：无）。
+- Column 1: Serial number.
+- Column 2: Character.
+- Column 3: Source reference or pseudo source reference.
+- Column 4: Description.
 
-进度：
+Progress:
 
-- 【已完成】G0、G1、G7、G8、GE、GK、GCE、GH、GT
-- 【待完成】G3、G5、G4K、GGH、GXC、GXH、GZH、GCH、GCY、GKX、GHZ、GHZR、GFC、GOCD、GXHZ、GHF、GZFY、GZJW、GFZ、GGFZ、GLK、GZ
-- 【无法完成】GS、GDZ、GRM、GWZ、GBK、GHC、GIDC、GLGYJ、GPGLG、GCYY、GJZ、GKJ、GZYS
+- [Finished] G0, G1, G7, G8, GE, GK, GCE, GH, GT
+- [Not finished] G3, G5, G4K, GGH, GXC, GXH, GZH, GCH, GCY, GKX, GHZ, GHZR, GFC, GOCD, GXHZ, GHF, GZFY, GZJW, GFZ, GGFZ, GLK, GZ
+- [Cannot be finished] GS, GDZ, GRM, GWZ, GBK, GHC, GIDC, GLGYJ, GPGLG, GCYY, GJZ, GKJ, GZYS
 
+## 字频 (Frequency)
 
-## 汉字频度统计_1988.txt
+### 字频 > 汉字频度统计_1988.txt
 
-【核心参考文献】贝贵琴，张学涛．汉字频度统计——速成识读优选表．电子工业出版社，1988-04．（[全图联盟](http://book.ucdrs.superlib.net/views/specific/2929/bookDetail.jsp?dxNumber=000001081892&d=F354F677C912576BA20CE537E3431A70&fenlei=08011304)）
+[Core Reference] 贝贵琴, 张学涛. 汉字频度统计——速成识读优选表. 电子工业出版社, 1988-04. ([全图联盟](http://book.ucdrs.superlib.net/views/specific/2929/bookDetail.jsp?dxNumber=000001081892&d=F354F677C912576BA20CE537E3431A70&fenlei=08011304))
 
-- 第一列：序号（单位：无）。对应参考文献正文第一列。
-- 第二列：汉字（单位：无）。对应参考文献正文第二列。如果属于同一字位的字形出现在 GB/T 2312-1980 中，则使用 GB/T 2312-1980 中的字形，否则使用简化字，原书字形与简化字不一致的全体字形列举如下。
-    - 1693「颜」，原文为「顔」。
-    - 2174「峡」，原文为「峽」。
-    - 4771「毐」，原文为「⿱士母」。
-    - 5289「伫」，原文为「⿰亻宁」。
-    - 5368「𫘧」，原文为「⿰马彔」。
-    - 5883「盝」，原文为「⿱彔皿」。
-    - 5972「𩽾」，原文为「鮟」。
-    - 5974「鲯」，原文为「鯕」。
-- 第三列：单字出现次数（类型一）（单位：个）。
-- 第四列：累计出现次数（类型一）（单位：个）。对应参考文献正文第六列。
-- 第五列：累计出现比例（类型一）（单位：%）。对应参考文献正文第七列。
-- 第六列：单字出现次数（类型二）（单位：个）。对应参考文献正文第五列。
-- 第七列：累计出现次数（类型二）（单位：个）。
-- 第八列：累计出现比例（类型二）（单位：%）。
-    - 两个类型的区分基于参考文献的字频累加错误。由于无法确认单字出现次数和累计出现次数何者更可靠，本文档基于分别假设单字出现次数或累计出现次数正确的前提下重新计算，其结果分别为类型二和类型一。
+- Column 1: Serial number. Corresponds to the Column 1 of the body of the reference.
+- Column 2: Character. Corresponds to the Column 2 in the body of the reference. If the forms belonging to the same character position appear in GB/T 2312—1980, the glyphs in GB/T 2312—1980 are used; otherwise, simplified characters are used. All forms in the original book that do not agree with the simplified characters are listed below.
 
-参考资料第三列给出了汉字的拼音，第四列给出了汉字的总笔画数。二者都有一些错误，但其与字频无关，且 Unihan 数据库中存在相关数据，因而不在此列举。关于参考资料的其它评论列举如下。
--   参考资料按单字出现字频降序排列，但 18「个」、231「立」、443「话」和 982「疗」的字频均大于上一字的字频。此外，如果假定累计出现次数正确，则 670「某」和 818「协」的字频也大于上一字的字频。
--   4326「軎」出现于 GB/T 2312-1980 中，其对应的简化字为「𰹲」。	
--   4914「朊」出现于 GB/T 2312-1980 中，归月部，但按其含义应归肉部，从而其实际指代「䏓」。
+  - 1693 “颜”, original “顔”.
+  - 2174 “峡”, original “峽”.
+  - 4771 “毐”, original “⿱士母”.
+  - 5289 “伫”, original “⿰亻宁”.
+  - 5368 “𫘧”, original “⿰马彔”.
+  - 5883 “盝”, original “⿱彔皿”.
+  - 5972 “𩽾”, original “鮟”.
+  - 5974 “鲯”, original “鯕”.
+- Column 3: Character frequency (type A) (times).
+- Column 4: Accumulate frequency (type A) (times). Corresponds to the sixth column in the body of the reference.
+- Column 5: Accumulate frequency ratio (type A) (%). Corresponds to the seventh column in the body of the reference.
+- Six column: Character frequency (type B) (times). Corresponds to the Column 5 in the body of the reference.
+- Seventh column: Accumulate frequency (type B) (times).
+- Eighth column: Accumulate frequency ratio (type B) (%).
 
-## 按字音查汉字频度表_1980.txt
+The distinction between the two types is based on the incorrect accumulate frequencies in the references. As it is not possible to confirm which is more reliable, the number of single word occurrences or cumulative occurrences, this document is recalculated based on the assumption that the number of single word occurrences or cumulative occurrences are correct, respectively, and the results are type two and type one.
 
-【核心参考文献】郑林曦［主编］，高景成［主编］．按字音查汉字频度表（字音照汉字拼音字母顺序排列）．中国文字改革委员会，1980-08．（[全图联盟](http://book.ucdrs.superlib.net/views/specific/2929/bookDetail.jsp?dxNumber=000000924233&d=E2662B8B2432107B60EEBE62D0EB3F31&fenlei=0802070404)）
+The Column 3 of the reference gives the pinyin of the character and the Column 4 gives the total number of strokes of the character. Both have some errors, and they are not related to the frequency of the characters and similar data exist in the Unihan database, so they are not listed here. Other comments on the references are listed below.
 
-- 第一列：序号（单位：无）。由本人添加的流水号，按字头出现在书中的顺序排列。
-- 第二列：汉字（单位：无）。对应参考文献正文第三列。
-- 第三列：级别（单位：级）。对应参考文献正文第一列。原文的「Ⅰa、Ⅰ、Ⅱ、Ⅲ、Ⅳ、Ⅴ」均改为「1a、1、2、3、4、5」。改动了部分值，即按出现次数降序，原编号分别为 42、560、1367、2400、4170 及其之前的汉字的级别设定为 1a、1、2、3、4 级汉字，其余汉字为 5 级汉字。
-- 第四列：原编号（单位：无）。对应参考资料正文第二列。原《汉字频度表》中〈综合频度表〉的编号。原文的「a、b、c」均改为「.1、.2、.3」。
-- 第五列：出现次数（单位：个）。对应参考资料正文第四列。
-- 第六列：注释（单位：无）。主要包括对字头的简繁修正、按附录对各数据的修正细节等。
+- The references are listed in descending order of character frequency, but the frequency of 18 “个”, 231 “立”, 443 “话”and 982 “疗”are all greater than the frequency of the previous character. In addition, if the cumulative number of occurrences is assumed to be correct, the character frequencies for 670 “某”and 818 “协”are also greater than the frequency of the previous character.
+- 4326 “軎”appears in GB/T 2312—1980 and its corresponding simplified character is “𰹲”.
+- 4914 “朊”appears in GB/T 2312—1980 under 月 radical, but by implication should be under 肉 radical, so that it actually refers to “䏓”.
+
+### 字频 > 按字音查汉字频度表_1980.txt
+
+[Core Reference] 郑林曦 (chief), 高景成 (chief). 按字音查汉字频度表 (字音照汉字拼音字母顺序排列). 中国文字改革委员会, 1980-08. ([全图联盟](http://book.ucdrs.superlib.net/views/specific/2929/bookDetail.jsp?dxNumber=000000924233&d=E2662B8B2432107B60EEBE62D0EB3F31&fenlei=0802070404))
+
+- Column 1: Serial number.
+- Column 2: Character. Corresponds to the Column 3 in the body of the reference.
+- Column 3: Level (level). Corresponds to the Column 1 in the body of the reference. The original “Ⅰa, Ⅰ, Ⅱ, Ⅲ, Ⅳ, Ⅴ”have been changed to “1a, 1, 2, 3, 4, 5”. Some of the values have been changed, i.e. the characters originally numbered 42, 560, 1367, 2400, 4170 and earlier have been set in descending order of occurrence as level 1a, 1, 2, 3 and 4 characters, while the rest are level 5 characters.
+- Column 4: original serial number. Corresponds to the Column 2 in the body of the reference. The number of the 综合频度表 in the original 汉字频度表. For “a, b, c”in the original text, read “.1, .2, .3”.
+- Column 5: Frequency (times). Corresponds to the Column 4 in the body of the reference.
+- Column 6: Notes. Mainly includes corrections to headers for simplified/traditional form, details of corrections to individual data by appendix, etc.
+
+## 字盘 (Cases)
+
+### 字盘 > 新华字目表_1976.txt
+
+[Core Reference] 北京新华字模厂字目表. 1976-05. ([孔夫子](https://book.kongfz.com/28596/3131848582/1632580369/))
+
+* Column 1: Serial number.
+* Column 2: Character.
+* Column 3: Radical.
+* Column 4: Level (level).
+* Column 5: Page number.
+* Column 6: Pseudo source reference.
+
+### 字盘 > 新字盘样本_1967.txt
+
+[Core Reference] 上海字模一厂新字盘样本. 1967. ([孔夫子](https://book.kongfz.com/231815/1391608848/1632580621/))
+
+* Column 1: Serial number.
+* Column 2: Character.
+* Column 3: Case number.
+* Column 4: Pseudo source reference.
+
+### 字盘 > 标题字盘书_1975.txt
+
+[Core Reference] 标题字盘书. 荆州印刷厂. 1975-10. ([孔夫子](https://book.kongfz.com/17731/2107892434/1636599860/))
+
+* Column 1: Serial number.
+* Column 2: Character.
+* Column 3: Pseudo source reference.
