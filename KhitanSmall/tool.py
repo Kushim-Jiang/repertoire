@@ -58,7 +58,8 @@ def shuffle(string: str) -> str:
 
 def pua_parser(string: str) -> str:
     list = string.split(' ')
-    new_list = [shuffle(st) for st in list]
+    # new_list = [shuffle(st) for st in list]
+    new_list = [st for st in list]
     res = pua_to_string(" ".join(new_list))
     return res
 
