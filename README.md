@@ -2,13 +2,7 @@
 
 ## Tibetan > 20542-22238.txt
 
-- Column 1: Serial number.
-- Column 2: Tibetan cluster.
-- Column 3: PUA codepoint.
-- Column 4: Canonical equivalent sequence.
-- Column 5: Latin transliteration.
-
-The transliteration scheme is based on GB/T 20542 and GB/T 22238, but not exactly the same. The purpose of the modification is to ensure that the non-modifier letters correspond to the Tibetan characters.
+The Tibetan data is maintained in [`tibtfontbuilder`](https://github.com/kushim-Jiang/tibtfontbuilder/).
 
 ## KhitanSmall > khitan-words.txt
 
@@ -35,7 +29,7 @@ Progress:
 
 ## 字频 (Frequency)
 
-### 字频 > 汉字频度统计_1988.txt
+### 字频 > 汉字频度统计\_1988.txt
 
 [Core Reference] 贝贵琴, 张学涛. 汉字频度统计——速成识读优选表. 电子工业出版社, 1988-04. ([全图联盟](http://book.ucdrs.superlib.net/views/specific/2929/bookDetail.jsp?dxNumber=000001081892&d=F354F677C912576BA20CE537E3431A70&fenlei=08011304))
 
@@ -50,6 +44,7 @@ Progress:
   - 5883 “盝”, original “⿱彔皿”.
   - 5972 “𩽾”, original “鮟”.
   - 5974 “鲯”, original “鯕”.
+
 - Column 3: Character frequency (type A) (times).
 - Column 4: Accumulate frequency (type A) (times). Corresponds to the sixth column in the body of the reference.
 - Column 5: Accumulate frequency ratio (type A) (%). Corresponds to the seventh column in the body of the reference.
@@ -65,7 +60,7 @@ The Column 3 of the reference gives the pinyin of the character and the Column 4
 - 4326 “軎”appears in GB/T 2312—1980 and its corresponding simplified character is “𰹲”.
 - 4914 “朊”appears in GB/T 2312—1980 under 月 radical, but by implication should be under 肉 radical, so that it actually refers to “䏓”.
 
-### 字频 > 按字音查汉字频度表_1980.txt
+### 字频 > 按字音查汉字频度表\_1980.txt
 
 [Core Reference] 郑林曦 (chief), 高景成 (chief). 按字音查汉字频度表 (字音照汉字拼音字母顺序排列). 中国文字改革委员会, 1980-08. ([全图联盟](http://book.ucdrs.superlib.net/views/specific/2929/bookDetail.jsp?dxNumber=000000924233&d=E2662B8B2432107B60EEBE62D0EB3F31&fenlei=0802070404))
 
@@ -78,30 +73,30 @@ The Column 3 of the reference gives the pinyin of the character and the Column 4
 
 ## 字盘 (Cases)
 
-### 字盘 > 新华字目表_1976.txt
+### 字盘 > 新华字目表\_1976.txt
 
 [Core Reference] 北京新华字模厂字目表. 1976-05. ([孔夫子](https://book.kongfz.com/28596/3131848582/1632580369/))
 
-* Column 1: Serial number.
-* Column 2: Character.
-* Column 3: Radical.
-* Column 4: Level (level).
-* Column 5: Page number.
-* Column 6: Pseudo source reference.
+- Column 1: Serial number.
+- Column 2: Character.
+- Column 3: Radical.
+- Column 4: Level (level).
+- Column 5: Page number.
+- Column 6: Pseudo source reference.
 
-### 字盘 > 新字盘样本_1967.txt
+### 字盘 > 新字盘样本\_1967.txt
 
 [Core Reference] 上海字模一厂新字盘样本. 1967. ([孔夫子](https://book.kongfz.com/231815/1391608848/1632580621/))
 
-* Column 1: Serial number.
-* Column 2: Character.
-* Column 3: Case number.
-* Column 4: Pseudo source reference.
+- Column 1: Serial number.
+- Column 2: Character.
+- Column 3: Case number.
+- Column 4: Pseudo source reference.
 
-### 字盘 > 标题字盘书_1975.txt
+### 字盘 > 标题字盘书\_1975.txt
 
 [Core Reference] 标题字盘书. 荆州印刷厂. 1975-10. ([孔夫子](https://book.kongfz.com/17731/2107892434/1636599860/))
 
-* Column 1: Serial number.
-* Column 2: Character.
-* Column 3: Pseudo source reference.
+- Column 1: Serial number.
+- Column 2: Character.
+- Column 3: Pseudo source reference.
